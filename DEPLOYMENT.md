@@ -4,7 +4,7 @@ This project has a Vite frontend, an Express and Socket.IO backend, and a MySQL 
 
 ## 1. Prepare the database
 
-Create a TiDB Cloud Starter cluster and database, generate a database password, and add your deployment API's outbound IP access as required by the provider. Use its connection details (`host`, port `4000`, user, and database name) as the Render environment values. Import [server/schema.sql](server/schema.sql) into the selected database using TiDB's SQL editor. This export contains schema only; local task and user records are not copied.
+Create a TiDB Cloud Starter cluster and a database named `kanban_db`, generate a database password, and add your deployment API's outbound IP access as required by the provider. Use its connection details (`host`, port `4000`, and user) as the Render environment values. `DB_NAME` is already set to `kanban_db`. Import [server/schema.sql](server/schema.sql) into that database using TiDB's SQL editor. This export contains schema only; local task and user records are not copied.
 
 ## 2. Deploy the API
 
